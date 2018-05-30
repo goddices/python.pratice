@@ -24,6 +24,19 @@ class MyStringArray:
     def __getitem__(self,key):
         return self.array[key]
 
+class HeHe:
+    # __new__
+    def __new__(cls,s,b):
+        self = object.__new__(cls)
+        self.s = s
+        self.b = b 
+        print("calling __new__ method s&b is",s,b)
+        return self
+        
+    def __init__(self,s,b):
+        print("calling __init__ method s&b is",s,b) 
+
+
 def scope_test():
     def do_local():
         spam = "local spam"
@@ -59,4 +72,7 @@ print("msa[0] is ",msa1[1])
 print(len(msa1))
 for item in msa1:
     print(item)
+ 
+
+sb1 = HeHe("s","b")
  
