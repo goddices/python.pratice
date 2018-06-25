@@ -1,0 +1,168 @@
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-06-15') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-06-29') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-07-22') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-09-20');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-06-16') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-06-30') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-07-23') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-09-21');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-06-17') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-07-01') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-07-24') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-09-22');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-06-18') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-07-02') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-07-25') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-09-23');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-06-19') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-07-03') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-07-26') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-09-24');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-06-20') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-07-04') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-07-27') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-09-25');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-06-21') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-07-05') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-07-28') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-09-26');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-06-22') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-07-06') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-07-29') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-09-27');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-06-23') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-07-07') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-07-30') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-09-28');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-06-24') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-07-08') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-07-31') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-09-29');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-06-25') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-07-09') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-08-01') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-09-30');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-06-26') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-07-10') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-08-02') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-10-01');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-06-27') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-07-11') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-08-03') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-10-02');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-06-28') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-07-12') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-08-04') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-10-03');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-06-29') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-07-13') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-08-05') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-10-04');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-06-30') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-07-14') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-08-06') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-10-05');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-07-01') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-07-15') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-08-07') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-10-06');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-07-02') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-07-16') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-08-08') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-10-07');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-07-03') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-07-17') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-08-09') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-10-08');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-07-04') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-07-18') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-08-10') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-10-09');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-07-05') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-07-19') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-08-11') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-10-10');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-07-06') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-07-20') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-08-12') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-10-11');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-07-07') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-07-21') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-08-13') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-10-12');
+
+
+insert into  CDContract  (ShortVIN,LongVIN,OfferId,OfferName,StartDate,EndDate)
+values('SS111','SS111123123123123123','CN0007',        'NBT 6AK Retail - Premium Package CN',  '2018-05-10','2018-07-08') ,
+	  ('SS111','SS111123123123123123','CNN008',		'E.Nav Retail - Premium Package',		'2018-05-10','2018-07-22') , 
+	  ('SS111','SS111123123123123123','BMPHEV_BASE_CN','BMW Phev Entry Package',				'2018-05-10','2018-08-14') , 
+	  ('SS111','SS111123123123123123','BMW_PREMIUM_CN','1Y Premium Package Upselling',			'2018-05-10','2018-10-13');
+
