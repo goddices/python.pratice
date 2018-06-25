@@ -1,6 +1,7 @@
 import re
-file1 = open("pymyapp/majiang_balance.txt", "r")
-file2 = open("pymyapp/majiang_balance_out.txt", "w")
+import sys
+file1 = open(sys.path[0]+"/majiang_balance.txt", "r")
+file2 = open(sys.path[0]+"/majiang_balance_out.txt", "w")
 players = {'朱': 0, '秦': 0, "盛": 0, "路": 0}
 lines = file1.readlines()
 for r in range(len(lines)):
