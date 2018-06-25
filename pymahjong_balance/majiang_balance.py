@@ -8,6 +8,8 @@ for r in range(len(lines)):
     detail = lines[r].replace('\n', '').replace("朱峰", '朱').replace("路女", "路")
     digits = re.findall(r"\d+\.?\d*", detail)
     if (len(digits)) != 0:
+        winner = ""
+        loser = ""
         digit = digits[0]
         dig_index = detail.index(digit)
         is_chong = "输" in detail
@@ -44,8 +46,6 @@ for r in range(len(lines)):
                 3* num if '路' == winner else -1*num))
         print(out_row)
         file2.write(out_row+'\n')
-        winner = ""
-        loser = ""
 print(players)
 file1.close()
 file2.close()
