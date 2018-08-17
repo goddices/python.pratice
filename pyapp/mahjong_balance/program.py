@@ -1,9 +1,9 @@
 import re
 import sys
-file1 = open(sys.path[0]+"/majiang_balance.txt", "r")
-file2 = open(sys.path[0]+"/majiang_balance_out.txt", "w")
+input_file = open(sys.path[0]+"/input.txt", "r")
+output_file = open(sys.path[0]+"/output.txt", "w")
 players = {'朱': 0, '秦': 0, "盛": 0, "路": 0}
-lines = file1.readlines()
+lines = input_file.readlines()
 for r in range(len(lines)):
     detail = lines[r].replace('\n', '').replace("朱峰", '朱').replace("路女", "路")
     digits = re.findall(r"\d+\.?\d*", detail)
@@ -45,7 +45,7 @@ for r in range(len(lines)):
                 3* num if '盛' == winner else -1*num,
                 3* num if '路' == winner else -1*num))
         print(out_row)
-        file2.write(out_row+'\n')
+        output_file.write(out_row+'\n')
 print(players)
-file1.close()
-file2.close()
+input_file.close()
+output_file.close()

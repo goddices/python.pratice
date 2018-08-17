@@ -19,18 +19,19 @@ values('{0}','{1}','CN0007',        'NBT 6AK Retail - Premium Package CN',  '201
 start_date = datetime.datetime.strptime(start_str, "%Y/%m/%d")
 end_date = datetime. datetime.strptime(end_str, "%Y/%m/%d")
 
-days = end_date - start_date
+days = end_date - start_date  
 expire_date = start_date
 
 f1 = open(output_file, "w+")
 
-for i in range(days.days):
-    expire_date = expire_date + datetime.timedelta(days=1)
+for i in range(days.days + 1):
     out = template.format(shortvin, longvin,
                           (expire_date + datetime.timedelta(days=-7)).strftime("%Y-%m-%d"),
                           (expire_date + datetime.timedelta(days=7)).strftime("%Y-%m-%d"),
                           (expire_date + datetime.timedelta(days=30)).strftime("%Y-%m-%d"),
                           (expire_date + datetime.timedelta(days=90)).strftime("%Y-%m-%d"))
+                          
+    expire_date = expire_date + datetime.timedelta(days=1)
 						  
     f1.write(out)
     f1.write("\r\n")
