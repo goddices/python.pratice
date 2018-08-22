@@ -1,17 +1,17 @@
-import scrapy
-from tutorial.items import TutorialItem
+# import scrapy
+# from tutorial.items import HexunHomeItem
 
-class QuotesSpider(scrapy.Spider):
-    name = "quotes"
-    start_urls = [
-        'http://www.hexun.com',
-    ]
+# class HexunHomeSpider(scrapy.Spider):
+#     name = "hexun"
+#     start_urls = [
+#         'http://www.hexun.com',
+#     ]
 
-    def parse(self, response):
-        yield TutorialItem(
-            text = response.xpath('//div[@class="newsList"]/ul/li/a/text()').extract() ,
-            link = response.xpath('//div[@class="newsList"]/ul/li/a/@href').extract() 
-        )
+#     def parse(self, response):
+#         yield HexunHomeItem(
+#             text = response.xpath('//div[@class="newsList"]/ul/li/a/text()').extract() ,
+#             link = response.xpath('//div[@class="newsList"]/ul/li/a/@href').extract() 
+#         )
         # yield {
         #     'text': c1.xpath()
         #     'author': quote.css('small.author::text').extract_first(),
