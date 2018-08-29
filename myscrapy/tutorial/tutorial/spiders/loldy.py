@@ -3,26 +3,26 @@ from tutorial.items import  LoLdyItem
 
 class LoLdySpider(scrapy.Spider):
     name = "loldy"
-    start_urls = [
-        'https://www.loldytt.com/Dongzuodianying/MTYJ/',
-    ]
+    # start_urls = [
+    #     'https://www.loldytt.com/Dongzuodianying/QSR/',
+    # ]
 
 
-    # def start_requests(self): 
-        # source_table = [ 
-        #                 # ('Dongzuodianying',99), 
-        #                 # ('Kehuandianying',31), 
-        #                 # ('Kongbudianying',83),
-        #                 # ('Xijudianying',121),
-        #                 # ('Aiqingdianying',54),
-        #                 # ('Juqingdianying',276),
-        #                 # ('Zhanzhengdianying',13),
-        #                 # ('Anime',118),
-        #                 ('Zuixinmeiju',102) 
-        #                 ]
-        # for row in source_table:
-        #     for i in range(row[1]): 
-        #         yield scrapy.Request('https://www.loldytt.com/%s/chart/%d.html'%(row[0],i+1), self.parse_list) 
+    def start_requests(self): 
+        source_table = [ 
+                        # ('Dongzuodianying',99), 
+                        # ('Kehuandianying',31), 
+                        # ('Kongbudianying',83),
+                        # ('Xijudianying',121),
+                        # ('Aiqingdianying',54),
+                        # ('Juqingdianying',276),
+                        # ('Zhanzhengdianying',13),
+                        # ('Anime',118),
+                        ('Zuixinmeiju',102) 
+                        ]
+        for row in source_table:
+            for i in range(row[1]): 
+                yield scrapy.Request('https://www.loldytt.com/%s/chart/%d.html'%(row[0],i+1), self.parse_list) 
          
 
     def parse_list(self, response):
@@ -37,8 +37,8 @@ class LoLdySpider(scrapy.Spider):
             f3 = response.xpath('//div[@class="haibao"]/a/img/@src').extract()
             f4 = response.xpath('//div[@class="zhuyan"]/ul/li/text()').extract()
             f5 = response.xpath('//div[@class="neirong"]/p/text()').extract()
-            f6 = response.xpath('//ul[@class="downurl"]/li/a/@href | //ul[@class="downurl"]/li/a/@title').extract() 
-            f7 = response.xpath('//ul[@class="lm"]/h1/p/text()').extract() 
+            f6 = response.xpath('//ul[@class="downurl"]/li/a/@href | //ul[@class="downurl"]/li/a/@title | //div[@id="bt"]/ul/li/a/@href | //div[@id="bt"]/ul/li/a/@title').extract() 
+            f7 = response.xpath('//div[@class="lm"]/h1/p/text()').extract() 
             yield LoLdyItem( 
                 title = f1[0] if len(f1)>0 else 'null',
                 tags = str(f2[0]).strip('\r\n') if len(f2)>1 else 'null'  ,

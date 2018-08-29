@@ -84,7 +84,7 @@ class LoLdyPipeline(object):
         #     self.close_db()
         # self.close_db()
         try:
-            file = open('output/Zuixinmeiju'+ datetime.datetime.now().strftime('%Y%m%d%H%M%S')+'.csv','w+',encoding='gb2312',errors='ignore')
+            file = open('c:/users/qxu8502/desktop/output/Zuixinmeiju'+ datetime.datetime.now().strftime('%Y%m%d%H%M%S')+'.csv','w+',encoding='gb2312',errors='ignore')
             writer = csv.writer(file)
             for row in self.datacache:
                 writer.writerow(row) 
@@ -108,3 +108,56 @@ class LoLdyPipeline(object):
         # if self.cnx.is_connected(): 
         #     self.cursor.close()
         #     self.cnx.close()
+
+
+class BtbtdyPipeline(object): 
+
+    def open_spider(self, spider):
+        self.datacache = []
+        # try:
+        #     self.cnx = mysql.connector.connect(  
+        #         user='root', 
+        #         password='123456',
+        #         host='127.0.0.1',
+        #         database='dianying') 
+        #     self.cursor = self.cnx.cursor()
+
+        # except mysql.connector.Error as err:
+        #     print(err)
+        #     self.close_db()
+
+    def close_spider(self, spider): 
+        # try:
+        #     for data in self.datacache:
+        #         try:
+        #             self.cursor.execute(
+        #                 "INSERT INTO sp_film_info (title,tags,image,actors,content,download) VALUES (%s,%s,%s,%s,%s,%s)" ,data)
+        #         except mysql.connector.Error as err:
+        #             print(err) 
+        #             continue
+        #     # Make sure data is committed to the database
+        #     self.cnx.commit()
+        # except mysql.connector.Error as err:
+        #     print(err) 
+        #     self.close_db()
+        # self.close_db()
+        try:
+            file = open('c:/users/qxu8502/desktop/output/btbtdy'+ datetime.datetime.now().strftime('%Y%m%d%H%M%S')+'.csv','w+',encoding='gb2312',errors='ignore')
+            writer = csv.writer(file)
+            for row in self.datacache:
+                writer.writerow(row) 
+            file.close()
+        except Exception as err:
+            print(err)
+
+    def process_item(self, item, spider):   
+        self.datacache.append(( 
+            item['dyid'],
+            item['title'],
+            item['image'],
+            item['year'],  
+            item['tags'],
+            item['content'] 
+        )) 
+        return item
+    

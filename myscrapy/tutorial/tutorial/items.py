@@ -14,7 +14,7 @@ import scrapy
 #     text = scrapy.Field()
 #     link = scrapy.Field()
 
-# 电影天堂
+#  LOL
 class LoLdyItem(scrapy.Item):
     title = scrapy.Field()
     tags = scrapy.Field()
@@ -23,3 +23,14 @@ class LoLdyItem(scrapy.Item):
     content = scrapy.Field()
     download = scrapy.Field()
     datetime = scrapy.Field()
+
+# btbtdy 
+class BtbtdyItem(scrapy.Item):
+    dyid = scrapy.Field()
+    title = scrapy.Field()
+    image = scrapy.Field()
+    year = scrapy.Field()
+    tags = scrapy.Field()
+    content = scrapy.Field()
+    # download = scrapy.Field()
+    # datetime = scrapy.Field()

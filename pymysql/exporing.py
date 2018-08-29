@@ -6,12 +6,14 @@ try:
                                 host='127.0.0.1',
                                 database='dianying')
     cursor = cnx.cursor()   #C:\Users\qxu8502\mypython\python.pratice\myscrapy\tutorial\output\Zuixinmeiju20180822163455.csv
-    file = open('C:\\Users\\qxu8502\\mypython\\python.pratice\\myscrapy\\tutorial\\output\\Zuixinmeiju20180822163455.csv', 
+    file = open('c:/users/qxu8502/desktop/output/Zuixinmeiju20180828142531.csv', 
         'r',encoding='gb2312',newline='\r\n')
     reader = csv.reader(file) 
 
     for row in reader:
-        cursor.execute("INSERT INTO sp_film_info (title,tags,image,actors,content,download) VALUES (%s,%s,%s,%s,%s,%s)" ,
+        if row[0] == '名侦探柯南': 
+            continue
+        cursor.execute("INSERT INTO sp_movie_lol (title,category,image,actors,content,download) VALUES (%s,%s,%s,%s,%s,%s)" ,
             (row[0],row[1],row[2],row[3],row[4],row[5]) 
         ) 
 
