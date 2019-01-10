@@ -3,8 +3,7 @@ import requests
 
 
 def request100():
-    headers = {
-        'Authorization':'Basic cXFjc2NuMTphNjFhZGVycw==', 
+    headers = { 
         'Cache-Control':'no-cache',
         'ocp-apim-subscription-key':'4be77952d6fe4f25a5e398fd84c77965',
         'Content-Type':'application/json',
