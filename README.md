@@ -1,2 +1,1 @@
-# python.pratice
-python学习练习
+#关于python 3 学习、工具脚本、验证等的代码仓库
