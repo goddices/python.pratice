@@ -5,7 +5,7 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
-import mysql.connector 
+#import mysql.connector 
 import csv
 import datetime
 
@@ -161,3 +161,27 @@ class BtbtdyPipeline(object):
         )) 
         return item
     
+class HuangLingPipeline(object): 
+    def open_spider(self, spider):
+        self.datacache = []
+
+    def close_spider(self, spider): 
+        try:
+            file = open('C:/Users/zhufeng/Desktop/save'+ datetime.datetime.now().strftime('%Y%m%d%H%M%S')+'.csv','w+',encoding='gb2312',errors='ignore')
+            writer = csv.writer(file)
+            for row in self.datacache:
+                writer.writerow(row) 
+            file.close()
+        except Exception as err:
+            print(err)
+         
+
+    def process_item(self, item, spider):   
+        self.datacache.append(  
+            (item['cmname'],
+            item['prname'],
+            item['enname'],
+            item['pzwh'],
+            item['producer'])
+        ) 
+        return item

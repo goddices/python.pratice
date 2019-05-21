@@ -1,6 +1,6 @@
 from scrapy import cmdline
 try:
-    name = 'btbtdy'
+    name = 'huangling'
     cmd = 'scrapy crawl {0}'.format(name) 
     cmdline.execute(cmd.split())
 except Exception as err:

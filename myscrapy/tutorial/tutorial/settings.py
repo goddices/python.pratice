@@ -67,7 +67,7 @@ ROBOTSTXT_OBEY = True
 ITEM_PIPELINES = {
    #'tutorial.pipelines.TutorialPipeline': 300,
    #'tutorial.pipelines.LoLdyPipeline': 300,
-   'tutorial.pipelines.BtbtdyPipeline': 300,
+   'tutorial.pipelines.HuangLingPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

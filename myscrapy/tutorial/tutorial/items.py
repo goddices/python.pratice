@@ -34,3 +34,10 @@ class BtbtdyItem(scrapy.Item):
     content = scrapy.Field()
     # download = scrapy.Field()
     # datetime = scrapy.Field()
+
+class HuangLingItem(scrapy.Item):  
+    enname = scrapy.Field()
+    prname = scrapy.Field()
+    cmname = scrapy.Field()
+    producer = scrapy.Field()
+    pzwh = scrapy.Field()
