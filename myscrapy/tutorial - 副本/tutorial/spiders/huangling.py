@@ -18,13 +18,10 @@ class HuangLingSpider(scrapy.Spider):
                 datacache.append([row[0],row[1],row[2],row[3]])
                 
             for row in datacache:
-                try:
-                    name = row[1]
-                    pdname = name[name.index('(')+1:name.index(')')]
-                    cmname=name[:name.index('(')]
-                    yield scrapy.Request('http://drugs.dxy.cn/search/drug.htm?keyword=%s %s'%(cmname,pdname), self.parse_list) 
-                except Exception:
-                    continue
+                name = row[1]
+                pdname = name[name.index('('):name.index(')')]
+                cmname=name[:name.index('(')]
+                yield scrapy.Request('http://drugs.dxy.cn/search/drug.htm?keyword=%s %s'%(cmname,pdname), self.parse_list) 
         except Exception as err:
             print(err)
 
@@ -33,13 +30,10 @@ class HuangLingSpider(scrapy.Spider):
             cmname = response.xpath('//div[@class="m49 detail detail1"]/dl/dd').extract()[0].split('<br>')[0].replace('<dd>','').strip().replace('通用名称：','')
             enname = response.xpath('//div[@class="m49 detail detail1"]/dl/dd').extract()[0].split('<br>')[1].strip().replace('英文名称：','')
             prname = response.xpath('//div[@class="m49 detail detail1"]/dl/dd').extract()[0].split('<br>')[2].strip().replace('商品名称：','')
-            # index1 = response.xpath('//div[@class="m49 detail detail1"]/dl/dt/span/text()').extract().index('批准文号:')
-            # index1 = response.xpath('//div[@class="m49 detail detail1"]/dl/dt/span/text()').extract().index('批准文号:')
-            # pzwh = response.xpath('//div[@class="m49 detail detail1"]/dl/dd').extract()[index1+1].replace('<dd>','').replace('</dd>','').replace('&amp;','&').strip()
-            pzwh = response.xpath('//div[@class="m49 detail detail1"]/dl/dt/span[@id="39"]/../following-sibling::dd[1]/text() | //div[@class="m49 detail detail1"]/dl/dt/span[@id="39"]/../following-sibling::dd[1]/p/text()').extract()[0].strip()
-            # index2 = response.xpath('//div[@class="m49 detail detail1"]/dl/dt/span/text()').extract().index('生产企业:')
-            # producer = response.xpath('//div[@class="m49 detail detail1"]/dl/dd').extract()[index2+1].replace('<dd>','').replace('</dd>','').replace('&amp;','&').strip()
-            producer =  response.xpath('//div[@class="m49 detail detail1"]/dl/dt/span[@id="1"]/../following-sibling::dd[1]/text() | //div[@class="m49 detail detail1"]/dl/dt/span[@id="39"]/../following-sibling::dd[1]/p/text()').extract()[0].strip()
+            index1 = response.xpath('//div[@class="m49 detail detail1"]/dl/dt/span/text()').extract().index('批准文号:')
+            pzwh = response.xpath('//div[@class="m49 detail detail1"]/dl/dd').extract()[index1+1].replace('<dd>','').replace('</dd>','').replace('&amp;','&').strip()
+            index2 = response.xpath('//div[@class="m49 detail detail1"]/dl/dt/span/text()').extract().index('生产企业:')
+            producer = response.xpath('//div[@class="m49 detail detail1"]/dl/dd').extract()[index2+1].replace('<dd>','').replace('</dd>','').replace('&amp;','&').strip()
             yield HuangLingItem ( 
                 cmname = cmname,
                 enname = enname ,
