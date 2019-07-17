@@ -12,7 +12,7 @@ class HuangLingSpider(scrapy.Spider):
     def start_requests(self): 
         try:
             datacache = []
-            file = open('C:/Users/zhufeng/Desktop/555.csv','r',encoding='utf8',errors='ignore')
+            file = open('C:/Users/qxu8502/workspace/myspace/python/python-xuexi/myscrapy/tutorial/files/test.csv','r',encoding='utf8',errors='ignore')
             rdr = csv.reader(file) 
             for row in rdr:
                 datacache.append([row[0],row[1],row[2],row[3]])
@@ -20,10 +20,10 @@ class HuangLingSpider(scrapy.Spider):
             for row in datacache:
                 try:
                     name = row[1]
-                    pdname = name[name.index('(')+1:name.index(')')]
-                    cmname=name[:name.index('(')]
-                    yield scrapy.Request('http://drugs.dxy.cn/search/drug.htm?keyword=%s %s'%(cmname,pdname), self.parse_list) 
-                except Exception:
+                    name = name[:name.index('/')]
+                    yield scrapy.Request('http://drugs.dxy.cn/search/drug.htm?keyword=%s'%(name), self.parse_list) 
+                except Exception as err:
+                    print(err)
                     continue
         except Exception as err:
             print(err)

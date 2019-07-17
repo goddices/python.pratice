@@ -84,7 +84,7 @@ class LoLdyPipeline(object):
         #     self.close_db()
         # self.close_db()
         try:
-            file = open('c:/users/qxu8502/desktop/output/Zuixinmeiju'+ datetime.datetime.now().strftime('%Y%m%d%H%M%S')+'.csv','w+',encoding='gb2312',errors='ignore')
+            file = open('c:/users/qxu8502/desktop/output/Zuixinmeiju'+ datetime.datetime.now().strftime('%Y%m%d%H%M%S')+'.csv','w+',encoding='utf8',errors='ignore')
             writer = csv.writer(file)
             for row in self.datacache:
                 writer.writerow(row) 
@@ -167,7 +167,7 @@ class HuangLingPipeline(object):
 
     def close_spider(self, spider): 
         try:
-            file = open('C:/Users/zhufeng/Desktop/save'+ datetime.datetime.now().strftime('%Y%m%d%H%M%S')+'.csv','w+',encoding='gb2312',errors='ignore')
+            file = open('C:/Users/qxu8502/workspace/myspace/python/python-xuexi/myscrapy/tutorial/files/save'+ datetime.datetime.now().strftime('%Y%m%d%H%M%S')+'.csv','w+',encoding='gb2312',errors='ignore')
             writer = csv.writer(file)
             for row in self.datacache:
                 writer.writerow(row) 
