@@ -1,9 +1,6 @@
 import json
-# text = "{\"text\":[\"cccc\",\"bbb\",\"aa\"] , \"link\":[\"aaaa\",\"cc\",\"b\"] } "
-# jsob = json.loads(text)
-# print(jsob)
-
-
-text2 = "[['aa','bb','cc',['11','22']],['dd','ee','ff',['3333','44444']],[['gg','hhh','iiii',['5555','6666']]]]"
-obj2 = json.loads(text2)
-print(obj2)
+text = "{\"text\":[\"cccc\",\"bbb\",\"aa\"] , \"link\":[\"aaaa\",\"cc\",\"b\"] } "
+jsob = json.loads(text)
+print('load json: ', jsob)
+print('   text: ', jsob['text'])
+print('   text[0]: ', jsob['text'][0])

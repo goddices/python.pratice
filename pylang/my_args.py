@@ -8,4 +8,4 @@ def AAA(*arg1,**arg2):
     print("arg2 = ",arg2)
  
 
-AAA(1,2,3,4,name="alex",age=3)
+#AAA(1,2,3,4,name="alex",age=3)
