@@ -54,11 +54,7 @@ for x in reverse([1,3,5,7,9]):
     
 for n in Fab(5):
     print(n)
-
-for n in Fab(5):
-    print(n)
-
-
+ 
 msa1 = MyStringArray("hello, this is my new world !")
 print("msa[0] is ",msa1[1])
 print(len(msa1))

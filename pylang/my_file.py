@@ -1,4 +1,4 @@
-file = open("data/haha.txt","r+")
+file = open(r"C:\Users\qxu8502\workspace\myspace\python\python-xuexi\pylang\data\haha.txt","r+",encoding='gbk')
 lines = file.readlines()
 for line in lines:
     print(line)
